@@ -23,4 +23,14 @@ public class Customer {
 
   private String country;
 
+  public Customer(String firstName, String surname, int age, Instant birthDay, String email,
+      String address, String country) {
+    this.firstName = firstName;
+    this.surname = surname;
+    this.age = age;
+    this.birthDay = birthDay;
+    this.email = email;
+    this.address = address;
+    this.country = country;
+  }
 }
