@@ -33,4 +33,11 @@ public class Customer {
     this.address = address;
     this.country = country;
   }
+
+  public Customer() {
+  }
+
+  public String getSurname() {
+    return surname;
+  }
 }
