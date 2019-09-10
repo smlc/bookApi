@@ -33,7 +33,7 @@ public class CustomerControllerITest {
   private int port;
 
   @Test
-  public void checkGetCustomerBySurname() throws Exception {
+  public void checkGetCustomerBySurname()  {
     String url = "http://localhost:" + port;
 
     URI uri = UriComponentsBuilder.fromHttpUrl(url)
@@ -45,5 +45,19 @@ public class CustomerControllerITest {
 
     assertEquals("Siesa", actualResponse.getBody().getSurname());
     assertEquals(HttpStatus.OK, actualResponse.getStatusCode());
+  }
+
+  @Test
+  public void checkErrorWhenCustomerNotFound()  {
+    String url = "http://localhost:" + port;
+
+    URI uri = UriComponentsBuilder.fromHttpUrl(url)
+        .path("/search/customer/")
+        .queryParam("surname", "Fouya").build().toUri();
+
+    ResponseEntity<Customer> actualResponse = restTemplate
+        .getForEntity(uri, Customer.class);
+
+    assertEquals(HttpStatus.NOT_FOUND, actualResponse.getStatusCode());
   }
 }
