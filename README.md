@@ -6,4 +6,6 @@ The application will be availble at http://localhost:8080/.
 
 For searching a customer send a request like this one : 
   - HTTP GET : http://localhost:8080/search/customer/?surname=siesa
- 
+
+Also avaible on Heroku :
+   - https://api-address-book.herokuapp.com/search/customer/?surname=siesa
