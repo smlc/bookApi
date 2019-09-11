@@ -40,4 +40,28 @@ public class Customer {
   public String getSurname() {
     return surname;
   }
+
+  public String getFirstName() {
+    return firstName;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public Instant getBirthDay() {
+    return birthDay;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public String getCountry() {
+    return country;
+  }
 }
