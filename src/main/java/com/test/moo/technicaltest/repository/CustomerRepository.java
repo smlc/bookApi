@@ -19,6 +19,9 @@ public class CustomerRepository {
           "France"),
       new Customer("Flora", "Jou", 26,
           Instant.parse("1993-01-15T00:00:00.00Z"), "flo@email.com", "Route Seysses",
+          "France"),
+      new Customer("Kevin", "Lez", 26,
+          Instant.parse("1993-07-14T00:00:00.00Z"), "kevin@email.com", "Route Seysses",
           "France")
 
   );

@@ -3,7 +3,6 @@ package com.test.moo.technicaltest.controller;
 import com.test.moo.technicaltest.domain.Customer;
 import com.test.moo.technicaltest.repository.CustomerRepository;
 import java.util.Optional;
-import java.util.function.Supplier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
