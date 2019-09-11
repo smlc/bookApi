@@ -25,7 +25,7 @@ public class CustomerRepository {
 
   public Optional<Customer> getBySurname(String surname) {
     return customers.stream()
-          .filter( customer -> customer.getSurname().equals(surname))
+          .filter( customer -> customer.getSurname().toLowerCase().equals(surname.toLowerCase()))
           .findFirst();
   }
 }
